@@ -18,7 +18,6 @@ Tujuan proyek ini adalah mempelajari penggunaan GitHub untuk mengelola file, bek
 
 ## 🌐 Website Proyek
 
-- **Website Utama:** [Link Website]()
 - **Portofolio Annisa Naufalina Tata Boana:** [Link Porto](https://hawaulmaftuhati.github.io/portofolio-annisa-naufalina-tb/)
 - **Portofolio Hawaul maftuhati:** [Link Porto](https://hawaulmaftuhati.github.io/portofolio-hawaul-maftuhati/)
 - **Portofolio Zahrah SAfitri Ramadanti:** [Link Porto](https://zahrah2121.github.io/Portofolio-Zahrahsafitri/)

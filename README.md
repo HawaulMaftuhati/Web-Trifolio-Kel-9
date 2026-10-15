@@ -1,12 +1,68 @@
-# TrioFolio
+# Project UTS 1 — GitHub Basics & Personal Portfolio
 
-Halaman utama yang menghubungkan tiga website portofolio anggota.
+Proyek ini merupakan tugas Ujian Tengah Semester (UTS) mata kuliah **Sistem Basis Data** pada Program Studi Teknik Informatika, UIN Syarif Hidayatullah Jakarta.
 
-## Cara menggunakan
-1. Buka `index.html` di browser untuk melihat tampilan.
-2. Untuk memublikasikan lewat GitHub Pages, unggah `index.html` ke repository baru.
-3. Buka repository → Settings → Pages.
-4. Pada bagian Build and deployment, pilih Deploy from a branch, pilih branch `main` dan folder `/(root)`, lalu Save.
-5. Setelah proses publikasi selesai, buka alamat website yang ditampilkan GitHub Pages.
+Tujuan proyek ini adalah mempelajari penggunaan GitHub untuk mengelola file, bekerja sama dalam kelompok, serta membuat website portofolio personal. Website dikembangkan menggunakan HTML, CSS, dan JavaScript dengan tampilan yang responsif dan mudah diakses.
 
-Tautan anggota dapat diubah langsung di `index.html` jika diperlukan.
+## 👥 Anggota Kelompok
+
+1. **Annisa Naufalina Tata Boana** — [Lihat Portofolio](https://hawaulmaftuhati.github.io/portofolio-annisa-naufalina-tb/)
+2. **Hawaul maftuhati** — [Lihat Portofolio](https://hawaulmaftuhati.github.io/portofolio-hawaul-maftuhati/)
+3. **Zahrah SAfitri Ramadanti** — [Lihat Portofolio](https://zahrah2121.github.io/Portofolio-Zahrahsafitri/)
+
+**Informasi Akademik:**
+- Mata Kuliah: Sistem Basis Data
+- Program Studi: Teknik Informatika
+- Kelas: D
+- Dosen Pengampu: Rizal Broer Bahaweres, S.Kom., M.Sc.
+
+## 🌐 Website Proyek
+
+- **Website Utama:** [Link Website]()
+- **Portofolio Annisa Naufalina Tata Boana:** [Link Porto](https://hawaulmaftuhati.github.io/portofolio-annisa-naufalina-tb/)
+- **Portofolio Hawaul maftuhati:** [Link Porto](https://hawaulmaftuhati.github.io/portofolio-hawaul-maftuhati/)
+- **Portofolio Zahrah SAfitri Ramadanti:** [Link Porto](https://zahrah2121.github.io/Portofolio-Zahrahsafitri/)
+
+## 📁 Struktur Repository
+
+```text
+Nama-Repository/
+│── index.html
+│── style.css
+│── Annisa Naufalina Tata Boana/
+│── Hawaul maftuhati/
+│── Zahrah SAfitri Ramadanti/
+└── README.md
+```
+
+- `index.html` berisi struktur halaman website.
+- `style.css` mengatur desain dan tampilan website.
+- `README.md` berisi informasi serta dokumentasi proyek.
+
+## 🛠️ Teknologi yang Digunakan
+
+- **HTML5:** Menyusun konten website.
+- **CSS3:** Mengatur tampilan dan tata letak.
+- **JavaScript:** Menambahkan interaksi.
+- **GitHub:** Menyimpan kode dan mendukung kolaborasi.
+- **GitHub Pages / Vercel:** Mempublikasikan website secara online.
+
+## 🎯 Tujuan Pengerjaan
+
+1. Memahami dasar penggunaan GitHub dan repository.
+2. Melatih kolaborasi dalam proyek kelompok.
+3. Membuat website portofolio personal.
+4. Mempelajari proses publikasi website.
+5. Mendokumentasikan tahapan pengerjaan proyek.
+
+## 🎥 Dokumentasi
+
+Proses pengerjaan proyek direkam sebagai dokumentasi praktik, mulai dari pengelolaan repository hingga pengujian website.
+
+**Video YouTube:** [Masukkan URL Video]
+
+---
+
+**Sistem Basis Data — Teknik Informatika**  
+UIN Syarif Hidayatullah Jakarta  
+2026

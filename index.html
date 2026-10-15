@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f5ff">
+  <title>TrioFolio — Portofolio Kami</title>
+  <style>
+    :root {
+      --bg: #fbf9ff;
+      --ink: #25223a;
+      --muted: #716d85;
+      --purple: #7657d8;
+      --purple-dark: #573bb4;
+      --pink: #f4dce9;
+      --lavender: #e8e0ff;
+      --line: #ece7f6;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 8%, #f2eaff 0, transparent 28rem),
+        radial-gradient(circle at 92% 18%, #fff0f6 0, transparent 24rem),
+        var(--bg);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1100px, calc(100% - 40px)); margin: auto; }
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 24px 0;
+    }
+    .brand { display: flex; align-items: center; gap: 11px; font-weight: 800; letter-spacing: -.04em; }
+    .brand-mark {
+      display: grid; place-items: center; width: 42px; height: 42px;
+      color: white; border-radius: 14px; background: linear-gradient(135deg, #967ce9, #d78bb8);
+      box-shadow: 0 8px 22px #9271d533; font-size: 19px;
+    }
+    nav { display: flex; gap: 25px; color: var(--muted); font-size: .93rem; }
+    nav a { text-decoration: none; }
+    nav a:hover { color: var(--purple); }
+    .hero { padding: 70px 0 76px; display: grid; grid-template-columns: 1.15fr .85fr; gap: 50px; align-items: center; }
+    .eyebrow {
+      display: inline-flex; gap: 8px; align-items: center; padding: 7px 12px;
+      border: 1px solid #e5dcff; background: #fff9ffb8; border-radius: 999px;
+      color: var(--purple-dark); font-size: .82rem; font-weight: 700;
+    }
+    h1 { font-size: clamp(2.65rem, 6vw, 4.6rem); line-height: 1.04; letter-spacing: -.065em; margin: 22px 0; }
+    h1 span { color: var(--purple); }
+    .hero p { max-width: 570px; color: var(--muted); font-size: 1.08rem; margin: 0 0 27px; }
+    .primary {
+      display: inline-flex; align-items: center; gap: 10px; padding: 13px 19px;
+      color: white; background: var(--purple); text-decoration: none; border-radius: 13px;
+      font-weight: 750; box-shadow: 0 10px 22px #7657d833; transition: .2s ease;
+    }
+    .primary:hover { transform: translateY(-2px); background: var(--purple-dark); }
+    .hero-art { min-height: 330px; display: grid; place-items: center; position: relative; }
+    .orbit {
+      width: min(100%, 380px); aspect-ratio: 1; border: 1px solid #ded3fa;
+      border-radius: 48% 52% 44% 56%; transform: rotate(-12deg);
+      background: linear-gradient(145deg, #f4efffdd, #fff4f8dd);
+      display: grid; place-items: center; position: relative;
+    }
+    .orbit:before, .orbit:after { content: ""; position: absolute; border: 1px solid #e6dafa; border-radius: 50%; }
+    .orbit:before { inset: 27px; }
+    .orbit:after { inset: 56px; }
+    .center-card {
+      z-index: 1; width: 190px; padding: 23px 18px; text-align: center;
+      border-radius: 24px; background: #fff; box-shadow: 0 18px 45px #66518b20;
+      transform: rotate(12deg);
+    }
+    .center-icon { font-size: 2.6rem; margin-bottom: 4px; }
+    .center-card strong { display: block; font-size: 1.08rem; }
+    .center-card small { color: var(--muted); }
+    .float {
+      position: absolute; z-index: 2; padding: 11px 14px; border-radius: 15px;
+      background: #fff; box-shadow: 0 12px 30px #66518b1b; font-weight: 750; font-size: .88rem;
+    }
+    .float.one { top: 40px; left: 0; transform: rotate(-7deg); }
+    .float.two { right: -2px; top: 100px; transform: rotate(6deg); }
+    .float.three { bottom: 25px; left: 26px; transform: rotate(5deg); }
+    section { padding: 42px 0 75px; }
+    .section-head { display: flex; justify-content: space-between; gap: 25px; align-items: end; margin-bottom: 25px; }
+    .section-head h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); letter-spacing: -.05em; margin: 0 0 7px; }
+    .section-head p { margin: 0; color: var(--muted); max-width: 480px; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card {
+      display: flex; flex-direction: column; min-height: 290px; padding: 24px;
+      background: #ffffffd9; border: 1px solid var(--line); border-radius: 23px;
+      box-shadow: 0 10px 35px #4e39740a; transition: transform .22s, box-shadow .22s;
+      cursor: pointer; position: relative;
+    }
+    .card:focus-within { outline: 3px solid #b7a4f4; outline-offset: 3px; }
+    .card:hover .card-link { color: var(--purple); }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 18px 38px #4e397416; }
+    .avatar {
+      display: grid; place-items: center; width: 54px; height: 54px; border-radius: 17px;
+      font-size: 1.25rem; font-weight: 850; margin-bottom: 21px;
+    }
+    .a1 { color: #6445bd; background: #eee7ff; }
+    .a2 { color: #a24e7b; background: #ffe7f1; }
+    .a3 { color: #427e7a; background: #e0f6f0; }
+    .card .label { color: var(--purple); text-transform: uppercase; letter-spacing: .12em; font-size: .72rem; font-weight: 800; }
+    .card h3 { font-size: 1.28rem; letter-spacing: -.03em; margin: 5px 0 9px; }
+    .card p { color: var(--muted); font-size: .94rem; margin: 0 0 22px; }
+    .card-link { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 15px; border-top: 1px solid var(--line); text-decoration: none; font-weight: 750; color: var(--purple-dark); }
+    .card-link span { font-size: 1.25rem; transition: transform .2s; }
+    .card-link:hover span { transform: translateX(4px); }
+    .note {
+      display: flex; gap: 16px; align-items: flex-start; margin-top: 25px; padding: 18px 20px;
+      border-radius: 17px; background: #f2edff; color: #5e527e; font-size: .92rem;
+    }
+    .note strong { color: #44337f; }
+    footer { border-top: 1px solid var(--line); padding: 24px 0 32px; color: var(--muted); font-size: .88rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
+    @media (max-width: 800px) {
+      .hero { grid-template-columns: 1fr; padding-top: 42px; gap: 20px; }
+      .hero-art { min-height: 300px; }
+      .cards { grid-template-columns: 1fr; }
+      .card { min-height: auto; }
+      .section-head { display: block; }
+      .section-head p { margin-top: 8px; }
+    }
+    @media (max-width: 520px) {
+      .wrap { width: min(100% - 28px, 1100px); }
+      nav { gap: 13px; font-size: .82rem; }
+      .brand { font-size: .95rem; }
+      .brand-mark { width: 36px; height: 36px; }
+      .hero-art { min-height: 265px; }
+      .orbit { width: 280px; }
+      .float { font-size: .75rem; padding: 8px 10px; }
+      .float.one { left: -2px; top: 25px; }
+      .float.two { right: -4px; top: 75px; }
+      .float.three { bottom: 10px; left: 3px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <a class="brand" href="#" aria-label="TrioFolio halaman utama" style="text-decoration:none">
+      <span class="brand-mark">T</span>
+      <span>TrioFolio<span style="color:#9278df">.</span></span>
+    </a>
+    <nav aria-label="Navigasi utama">
+      <a href="#home">Home</a>
+      <a href="#portofolio">Portofolio</a>
+      <a href="#tentang">Tentang</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div>
+        <span class="eyebrow">✦ Three people, one place to explore</span>
+        <h1>Kenali kami lewat <span>karya.</span></h1>
+        <p>
+          Selamat datang di TrioFolio! Satu halaman untuk mengenal dan menjelajahi
+          portofolio kami. Pilih profil yang ingin kamu lihat, lalu kunjungi halaman
+          portofolio masing-masing.
+        </p>
+        <a class="primary" href="#portofolio">Jelajahi portofolio <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi tiga portofolio">
+        <div class="orbit">
+          <div class="center-card">
+            <div class="center-icon">✳</div>
+            <strong>TrioFolio</strong>
+            <small>Our work, our story</small>
+          </div>
+          <div class="float one">✦ Creativity</div>
+          <div class="float two">⌘ Technology</div>
+          <div class="float three">♡ Collaboration</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="portofolio">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">OUR PORTFOLIOS</span>
+          <h2>Temukan portofolio kami</h2>
+        </div>
+        <p>Kenali perjalanan, keterampilan, dan proyek yang telah kami kerjakan melalui halaman pribadi masing-masing.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card" data-url="https://hawaulmaftuhati.github.io/portofolio-hawaul-maftuhati/" tabindex="0" role="link" aria-label="Buka portofolio Hawaul Maftuhati">
+          <div class="avatar a1">HM</div>
+          <span class="label">Member 01</span>
+          <h3>Hawaul Maftuhati</h3>
+          <p>Jelajahi profil, pengalaman, dan karya yang dikumpulkan dalam portofolio pribadi Hawaul.</p>
+          <a class="card-link" href="https://hawaulmaftuhati.github.io/portofolio-hawaul-maftuhati/" target="_blank" rel="noopener noreferrer">
+            Lihat portofolio <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="card" data-url="https://zahrah2121.github.io/Portofolio-Zahrahsafitri/" tabindex="0" role="link" aria-label="Buka portofolio Zahrah Safitri">
+          <div class="avatar a2">ZS</div>
+          <span class="label">Member 02</span>
+          <h3>Zahrah Safitri</h3>
+          <p>Kunjungi halaman Zahrah untuk melihat informasi diri dan karya yang ditampilkan di portofolionya.</p>
+          <a class="card-link" href="https://zahrah2121.github.io/Portofolio-Zahrahsafitri/" target="_blank" rel="noopener noreferrer">
+            Lihat portofolio <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="card" data-url="https://hawaulmaftuhati.github.io/portofolio-annisa-naufalina-tb/" tabindex="0" role="link" aria-label="Buka portofolio Annisa Naufalina">
+          <div class="avatar a3">AN</div>
+          <span class="label">Member 03</span>
+          <h3>Annisa Naufalina</h3>
+          <p>Lihat profil dan hasil karya Annisa melalui website portofolio pribadinya.</p>
+          <a class="card-link" href="https://hawaulmaftuhati.github.io/portofolio-annisa-naufalina-tb/" target="_blank" rel="noopener noreferrer">
+            Lihat portofolio <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+      </div>
+
+      <div class="note" id="tentang">
+        <span style="font-size:1.25rem">ⓘ</span>
+        <div><strong>Tentang TrioFolio</strong><br>
+          TrioFolio adalah halaman utama yang menghubungkan tiga website portofolio dalam satu tempat.
+          Tombol di setiap kartu akan membuka website portofolio anggota di tab baru, sehingga halaman ini tetap terbuka.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© 2026 TrioFolio. Dibuat sebagai ruang bersama untuk berkarya.</span>
+      <span>Made with care ✦</span>
+    </div>
+  </footer>
+  <script>
+    // Klik area kartu mana pun untuk membuka portofolio terkait.
+    document.querySelectorAll(".card[data-url]").forEach((card) => {
+      const openPortfolio = () => window.open(card.dataset.url, "_blank", "noopener,noreferrer");
+      card.addEventListener("click", (event) => {
+        if (event.target.closest("a")) return;
+        openPortfolio();
+      });
+      card.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openPortfolio();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

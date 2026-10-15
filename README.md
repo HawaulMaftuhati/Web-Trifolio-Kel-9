@@ -8,7 +8,6 @@ Tujuan proyek ini adalah mempelajari penggunaan GitHub untuk mengelola file, bek
 ## 👥 Anggota Kelompok
 
 | No. | Nama Anggota | Portofolio |
-|---|---|---|---|
 | 1 | Annisa Naufalina Tata Boana | [Lihat Website](https://hawaulmaftuhati.github.io/portofolio-annisa-naufalina-tb/) |
 | 2 | Hawaul Maftuhati | [Lihat Website](https://hawaulmaftuhati.github.io/portofolio-hawaul-maftuhati/) |
 | 3 | Zahra Safitri Ramadanti | [Lihat Website](https://zahrah2121.github.io/Portofolio-Zahrahsafitri/) |

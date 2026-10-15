@@ -11,21 +11,21 @@ Tujuan proyek ini adalah mempelajari penggunaan GitHub untuk mengelola file, bek
 
 | No. | Nama Anggota | Bidang Ketertarikan | Portofolio |
 |---|---|---|---|
-| 1 | [Nama Anggota 1] | [Bidang 1] | [Lihat Website](#) |
-| 2 | [Nama Anggota 2] | [Bidang 2] | [Lihat Website](#) |
-| 3 | [Nama Anggota 3] | [Bidang 3] | [Lihat Website](#) |
+| 1 | Annisa Naufalina Tata Boana] | [Bidang 1] | [Lihat Website](https://hawaulmaftuhati.github.io/portofolio-annisa-naufalina-tb/) |
+| 2 | Hawaul Maftuhati | [Bidang 2] | [Lihat Website](https://hawaulmaftuhati.github.io/portofolio-hawaul-maftuhati/) |
+| 3 | Zahra Safitri Ramadanti | [Bidang 3] | [Lihat Website](https://zahrah2121.github.io/Portofolio-Zahrahsafitri/) |
 
 **Informasi Akademik:**
 - Mata Kuliah: Sistem Basis Data
 - Program Studi: Teknik Informatika
-- Kelas: [Kelas]
+- Kelas: D
 - Dosen Pengampu: Rizal Broer Bahaweres, S.Kom., M.Sc.
 
 ## 🌐 Website Proyek
 
 - **Website Utama:** [Masukkan URL Website]
 - **Portofolio Anggota 1:** [Masukkan URL]
-- **Portofolio Anggota 2:** [Masukkan URL]
+- **Portofolio Anggota 2:** [https://hawaulmaftuhati.github.io/portofolio-annisa-naufalina-tb/]
 - **Portofolio Anggota 3:** [Masukkan URL]
 
 ## 📁 Struktur Repository

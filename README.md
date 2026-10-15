@@ -1,19 +1,17 @@
 # Web-Trifolio-Kel-9
 # Project UTS 1 — GitHub Basics & Personal Portfolio
 
-## 📌 Deskripsi Proyek
-
 Proyek ini merupakan tugas Ujian Tengah Semester (UTS) mata kuliah **Sistem Basis Data** pada Program Studi Teknik Informatika, UIN Syarif Hidayatullah Jakarta.
 
 Tujuan proyek ini adalah mempelajari penggunaan GitHub untuk mengelola file, bekerja sama dalam kelompok, serta membuat website portofolio personal. Website dikembangkan menggunakan HTML, CSS, dan JavaScript dengan tampilan yang responsif dan mudah diakses.
 
 ## 👥 Anggota Kelompok
 
-| No. | Nama Anggota | Bidang Ketertarikan | Portofolio |
+| No. | Nama Anggota | Portofolio |
 |---|---|---|---|
-| 1 | Annisa Naufalina Tata Boana] | [Bidang 1] | [Lihat Website](https://hawaulmaftuhati.github.io/portofolio-annisa-naufalina-tb/) |
-| 2 | Hawaul Maftuhati | [Bidang 2] | [Lihat Website](https://hawaulmaftuhati.github.io/portofolio-hawaul-maftuhati/) |
-| 3 | Zahra Safitri Ramadanti | [Bidang 3] | [Lihat Website](https://zahrah2121.github.io/Portofolio-Zahrahsafitri/) |
+| 1 | Annisa Naufalina Tata Boana | [Lihat Website](https://hawaulmaftuhati.github.io/portofolio-annisa-naufalina-tb/) |
+| 2 | Hawaul Maftuhati | [Lihat Website](https://hawaulmaftuhati.github.io/portofolio-hawaul-maftuhati/) |
+| 3 | Zahra Safitri Ramadanti | [Lihat Website](https://zahrah2121.github.io/Portofolio-Zahrahsafitri/) |
 
 **Informasi Akademik:**
 - Mata Kuliah: Sistem Basis Data
@@ -23,10 +21,10 @@ Tujuan proyek ini adalah mempelajari penggunaan GitHub untuk mengelola file, bek
 
 ## 🌐 Website Proyek
 
-- **Website Utama:** [Masukkan URL Website]
-- **Portofolio Anggota 1:** [Masukkan URL]
-- **Portofolio Anggota 2:** [https://hawaulmaftuhati.github.io/portofolio-annisa-naufalina-tb/]
-- **Portofolio Anggota 3:** [Masukkan URL]
+- **Website Utama:** [Link Porto]
+- **Portofolio Anggota 1:** [Masukkan URL](https://hawaulmaftuhati.github.io/portofolio-annisa-naufalina-tb/)
+- **Portofolio Hawaul Maftuhati:** [Link Porto](https://hawaulmaftuhati.github.io/portofolio-hawaul-maftuhati/)
+- **Portofolio Anggota 3:** [Link Porto](https://zahrah2121.github.io/Portofolio-Zahrahsafitri/)
 
 ## 📁 Struktur Repository
 
